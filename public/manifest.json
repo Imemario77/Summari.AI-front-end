@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Summari.ai",
+  "version": "1.0.0",
+  "description": "It let's you chat live with a website on the go",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["storage", "activeTab", "identity","tabs"],
+  "background": {
+    "service_worker": "src/background.js"
+  },  
+  "icons": {
+    "16": "public/favicon-16x16.png",
+    "48": "public/favicon-32x32.png"
+  }, 
+  "oauth2": {
+    "client_id": "269070568165-vf2ag4bdmjo06ve44es24fbhti1gnmjk.apps.googleusercontent.com",
+    "scopes": ["openid", "email", "profile"]
+  }
+}
